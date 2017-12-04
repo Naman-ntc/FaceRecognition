@@ -15,3 +15,11 @@ Below shows results of test, nearest three faces observed for each image on left
 
 ![Results of City Block](city_block.jpg)
 ![Results of Euclidean Block](eucledian.jpg)
+
+
+
+References :
+http://www.face-rec.org/algorithms/pca/jcn.pdf
+https://onionesquereality.wordpress.com/2009/02/11/face-recognition-using-eigenfaces-and-distance-classifiers-a-tutorial/
+http://www.maths.dur.ac.uk/users/kasper.peeters/pdf/face_recognition/reports/Barker.pdf
+https://courses.cs.washington.edu/courses/cse576/08sp/projects/project3/artifact/ankit/artifact/index.html
