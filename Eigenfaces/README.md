@@ -1,4 +1,4 @@
-# FaceRecognition
+# Eigenfaces for face retrieval
 
 A PCA based Face retrival system that made to work on a data base 100 people (50 males and 50 females).
 Use 12 PCA eigenfaces as features for nearest neighbour search during the testing procedure.
