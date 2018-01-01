@@ -1,7 +1,12 @@
 # FaceRecognition
+A face recognition system is a computer application capable of identifying or verifying a person from a digital image or a video frame from a video source.
+A simple approach can be to do a nearest neighbours from all the faces in the training data.
+But a facial image can have huge number of features as huge number of pixels and lots of faces in database.
+So we project the faces in a lower dimensional space, thus we need dimensionality reduction algorithms.
 
-Implemented Fisherface algorithm using Principal component analysis and fisher's linear discriminant analysis.
+PCA and LDA are two good dimensionality reduction algorithms and provide good results.
 
-Tested on the Yale Face Extended database comprising of over 2400 images 32x32 pixels b/w images of 38 individuals in different conditions like different facial expression, light intensity, light direction,glasses etc.
+### In this Repo
 
-Also Implemented Eigenfaces for recognition and compared performance between the two approaches
+* [Fisherfaces](FisherFaces)
+* [Eigenfaces](EigenFaces)

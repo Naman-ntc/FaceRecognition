@@ -142,7 +142,6 @@ classdef Fisherfaces < handle
                     nearest_neigbours = knnsearch(temp,obj.LDAed_test(i,:),'K',3);
                     nearest_neigbours = temp(nearest_neigbours,:);
                     nearest_neigbours = nearest_neigbours*obj.LDA_basis';
-                    nearest_neigbours(1,:);
                     subplot(obj.m_test,4,4*(i-1)+1), imshow(uint8(reshape(obj.X_test(i,:),obj.n_image)));
                     subplot(obj.m_test,4,4*(i-1)+2), imshow(uint8(reshape(nearest_neigbours(1,:),obj.n_image)));
                     subplot(obj.m_test,4,4*(i-1)+3), imshow(uint8(reshape(nearest_neigbours(2,:),obj.n_image)));
@@ -152,20 +151,3 @@ classdef Fisherfaces < handle
     end
 end 
 
-
-
-%%%%%%%%%%%%%%
-%       Test Script
-%load....
-%Accuracies = [];
-
-%{
-rand = randperm(400);
-test = rand(1:40);
-train = rand(41:400);
-X_train = fea(train,:); X_test = fea(test,:); Y_train = gnd(train); Y_test = gnd(test);
-Model = Fisherfaces(X_train,Y_train,40,[32 32]);
-Model.train_LDA();
-Model.give_test_data(X_test,Y_test);
-Accuracies(end+1) = Model.test_and_give_accuracy();
-%}
